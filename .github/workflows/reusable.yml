@@ -12,3 +12,7 @@ jobs:
         uses: matlab-actions/setup-matlab@v1
         with:
           release: R2023a
+      - name: Run MATLAB command
+        uses: matlab-actions/run-command@v1
+        with:
+          command: disp('hello world')
