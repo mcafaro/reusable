@@ -1,0 +1,12 @@
+on:
+  workflow_call:
+  
+jobs:
+  my-job:
+    name: Run MATLAB Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+      - name: Set up MATLAB
+        uses: matlab-actions/setup-matlab@v1
